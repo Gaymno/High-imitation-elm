@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link href="framework/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+		<link href="framework/reset.css" rel="stylesheet">
+		<link href="css/register.css" rel="stylesheet">
+		<link rel="stylesheet" href="../dist/tailwindcss.css">
+		<title>饿了么 用户注册</title>
+	</head>
+	<body>
+		<div class="w-full h-full">
+			
+			<!-- header部分 -->
+			<header class="w-full h-[12vw] bg-[#0097FF] text-[#fff] text-[4.8vw] fixed left-0 top-0 z-[1000] flex justify-center items-center">
+				<p>用户注册</p>
+			</header>
+			
+			<!-- 表单部分 -->
+			<ul class="w-full mt-[12vw]">
+				<li class="box-border pt-[4vw] pr-[3vw] pl-[3vw] flex items-center">
+					<div class="grow-0 shrink-0 basis-[18vw] text-[3vw] font-[700] text-[#666]">
+						手机号码：
+					</div>
+					<div class="flex-1">
+						<input type="text" placeholder="手机号码" class="border-none outline-none w-full h-[4vw] text-[3vw]">
+					</div>
+				</li>
+				<li class="box-border pt-[4vw] pr-[3vw] pl-[3vw] flex items-center">
+					<div class="grow-0 shrink-0 basis-[18vw] text-[3vw] font-[700] text-[#666]">
+						密码：
+					</div>
+					<div class="flex-1">
+						<input type="password" placeholder="密码" class="border-none outline-none w-full h-[4vw] text-[3vw]">
+					</div>
+				</li>
+				<li class="box-border pt-[4vw] pr-[3vw] pl-[3vw] flex items-center">
+					<div class="grow-0 shrink-0 basis-[18vw] text-[3vw] font-[700] text-[#666]">
+						确认密码：
+					</div>
+					<div class="flex-1">
+						<input type="password" placeholder="确认密码" class="border-none outline-none w-full h-[4vw] text-[3vw]">
+					</div>
+				</li>
+				<li class="box-border pt-[4vw] pr-[3vw] pl-[3vw] flex items-center">
+					<div class="grow-0 shrink-0 basis-[18vw] text-[3vw] font-[700] text-[#666]">
+						用户姓名：
+					</div>
+					<div class="flex-1">
+						<input type="text" placeholder="用户姓名" class="border-none outline-none w-full h-[4vw] text-[3vw]">
+					</div>
+				</li>
+				<li class="box-border pt-[4vw] pr-[3vw] pl-[3vw] flex items-center">
+					<div class="grow-0 shrink-0 basis-[18vw] text-[3vw] font-[700] text-[#666]">
+						性别：
+					</div>
+					<div class="flex-1" style="font-size: 3vw;">
+						<input type="radio" name="sex" checked style="width:6vw;height: 3.2vw;" class="border-none outline-none w-full h-[4vw] text-[3vw]">男
+						<input type="radio" name="sex" style="width:6vw;height: 3.2vw;" class="border-none outline-none w-full h-[4vw] text-[3vw]">女
+					</div>
+				</li>
+			</ul>
+			
+			<div class="w-full box-border pt-[4vw] pr-[3vw] pl-[3vw]">
+				<button onclick="location.href='login.html'" class="w-full h-[10vw] text-[3.8vw] font-[700] text-[#fff] bg-[#38CA73] rounded-[4px] border-none outline-none">注册</button>
+			</div>
+			
+			<!-- 底部菜单部分 -->
+			<ul class="w-full h-[14vw] border-t-[1px] border-t-solid border-t-[#DDD] bg-[#fff] fixed left-0 bottom-0 flex justify-around items-center">
+				<li onclick="location.href='index.html'" class="flex flex-col justify-center items-center text-[#999] select-none cursor-pointer">
+					<i class="fa fa-home text-[5vw]"></i>
+					<p class="text-[2.8vw]">首页</p>
+				</li>
+				<li class="flex flex-col justify-center items-center text-[#999] select-none cursor-pointer">
+					<i class="fa fa-compass text-[5vw]"></i>
+					<p class="text-[2.8vw]">发现</p>
+				</li>
+				<li onclick="location.href='orderList.html'" class="flex flex-col justify-center items-center text-[#999] select-none cursor-pointer">
+					<i class="fa fa-file-text-o text-[5vw]"></i>
+					<p class="text-[2.8vw]">订单</p>
+				</li>
+				<li class="flex flex-col justify-center items-center text-[#999] select-none cursor-pointer">
+					<i class="fa fa-user-o text-[5vw]"></i>
+					<p class="text-[2.8vw]">我的</p>
+				</li>
+			</ul>
+		</div>	
+	</body>
+</html>
